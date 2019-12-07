@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type='image/x-icon' href="images/book.png">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/top.css">
+    <link rel="stylesheet" type="text/css" href="css/login_content.css">
+    <title> Log in </title>
+    <style type="text/css">
+    </style>
+    <script>
+        window.onload = function () {
+            let ser_div = document.getElementById('ser_div');
+            let box = document.getElementById('box');
+            let title = document.getElementById('title');
+            let stu = document.getElementById('stu');
+            let man = document.getElementById('man');
+            let stu_form = document.getElementById('stu_form');
+            let man_form = document.getElementById('man_form');
+            title.onclick = function(){
+                ser_div.style.cssText +='border-color:#333a41;'
+            };
+            box.onclick = function(){
+                ser_div.style.cssText +='border-color:#333a41;'
+            };
+            ser_div.onclick = function () {
+                ser_div.style.cssText +='border-color:black;'
+            };
+            stu.onclick = function () {
+                stu.style.cssText += 'color: #333a41;background-color: whitesmoke;border-color:#333a41;transition:1s';
+                man.style.cssText += 'color: white;background-color:#333a41;border: 2px solid whitesmoke;';
+                stu_form.style.display = 'block';
+                man_form.style.display = 'none';
+            };
+            man.onclick = function () {
+                man.style.cssText += 'color: #333a41;background-color: whitesmoke;border-color:#333a41;transition:1s';
+                stu.style.cssText = 'color: white;background-color:#333a41;border: 2px solid whitesmoke;transition:1s';
+                man_form.style.display = 'block';
+                stu_form.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+<!--顶栏S-->
+<p id="title">图书管理系统</p>
+<!--搜索栏S-->
+<form action="php/chaxun.php" method="post">
+    <div id="ser_div">
+<!--搜索图标-->
+        <i><img src="images/ser1.png" style="width: 20px;height: 20px;position: relative;top: -7px;"></i>
+<!--输入框-->
+        <input name="query" placeholder="搜索" class="ser_in" autocomplete="off">
+    </div>
+</form>
+<!--搜索栏E-->
+<!--顶栏E-->
+<!--主体S-->
+<div id="box">
+<!--    左边栏背景S-->
+    <div class="left_div" >
+        <img src="images/2.jpg" style="width:1130px; height: 671px;">
+    </div>
+<!--    左边栏背景E-->
+<!--    登录页面S-->
+    <div class="main">
+<!--        图书logo-->
+        <div class="img_div">
+            <img src="images/book.png" style="width: 60px;height: 60px;">
+        </div>
+<!--        log in-->
+        <p class="login_p"> Log in </p>
+        <div id="stu" class="stu">
+            student
+        </div>
+        <div id="man" class="stu">
+            manger
+        </div>
+        <form id="stu_form" class="form" action="php/check.php" method="post" name="stu_form" >
+<!--            学生用户名输入栏-->
+            <label class="user_label">
+                Student Username OR License
+                <input type="text" name="username" class="input_user">
+            </label>
+<!--            密码输入栏-->
+            <label class="user_label">
+                Password
+                <input type="password" name="password" class="input_user input_pass">
+                <input type="hidden" name="people" value="student">
+            </label>
+<!--            提交-->
+            <label>
+                <input type="submit" name="submit" value=" Log in " class="submit">
+            </label>
+
+        </form>
+        <form id="man_form" class="form" action="php/check.php" method="post" name="man_form">
+            <!--            管理官用户名输入栏-->
+            <label class="user_label">
+                Manger Username OR License
+                <input type="text" name="username" class="input_user">
+            </label>
+            <!--            密码输入栏-->
+            <label class="user_label">
+                Password
+                <input type="password" name="password" class="input_user input_pass">
+            </label>
+            <!--            提交-->
+            <label>
+                <input type="submit" name="submit" value=" Log in " class="submit">
+            </label>
+
+        </form>
+    </div>
+<!--    登录页面E-->
+</div>
+<!--主体E-->
+</body>
+</html>

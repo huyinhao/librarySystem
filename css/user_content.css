@@ -1,0 +1,112 @@
+/*主体内容*/
+.cont{
+    width: 350px;
+    height: 600px;
+    background-size:cover;
+    border: 1px solid #d1d5da;
+    border-bottom: none;
+    display: inline-block;
+}
+/*ul标签*/
+.booklist{
+    width: 120px;
+    height: 455px;
+}
+/*logo*/
+.img_div{
+    margin-left: 0px;
+    margin-top: 160px;
+}
+/*li标签*/
+.booklist .l1{
+    width: 200px;
+    color: black;
+    font-size: 18px;
+    line-height: 50px;
+    top:-210px;
+    left: 180px;
+}
+/*个人信息*/
+.name_div{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    color: rgba(51,58,65,1);
+    line-height: 40px;
+    margin: 30px 0 10px 0;
+    border: 1px solid #d1d5da;
+    border-bottom: 2px solid #d1d5da;
+    box-shadow: 0 0 10px #333a41;
+}
+/*编号*/
+.num_div{
+    margin: 10px 0;
+}
+/*借书情况*/
+.userbox1{
+    width: 1165px;
+    height: 600px;
+    top: -53px;
+    left: 200px;
+    text-align: center;
+    float: right;
+    background-color: whitesmoke;
+    overflow: scroll;
+    text-overflow: ellipsis;
+}
+.booklist .l1:hover{
+    cursor: pointer;
+}
+.booklist .l1 .userbox1:hover{
+    cursor: default;
+}
+/*借书详情标题*/
+.box1_ul1{
+    color: #333a41;
+    font-size: 18px;
+    text-align: center;
+}
+.box1_ul1 .li_jie{
+    margin-top: 50px;
+    font-size: 24px;
+    color:#333a41;
+    border: none;
+}
+/*借书详情各字段*/
+.box1_ul2 li{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    line-height: 40px;
+    margin: 30px 4px 10px 4px;
+    border: 1px solid #d1d5da;
+    border-bottom: 2px solid #d1d5da;
+    box-shadow: 0 0 10px #333333;
+    top:10px;
+    font-size: 18px;
+    border-bottom: 2px solid gray;
+}
+/*白色风格*/
+.box1_ul2 .white{
+    color: #333a41;
+    background-color: whitesmoke;
+    border:2px solid #333a41;
+}
+/*黑色风格*/
+.box1_ul2 .black{
+    color: white;
+    background-color:#333a41;
+    border: 2px solid whitesmoke;
+}
+.box1_ul2 .ins_li{
+    font-size: 14px;
+    margin-top: 10px;
+}
+/*提示信息*/
+.box1_ul2 .no_more{
+    width: 960px;
+    height: 48px;
+    font-size: 24px;
+    color: #333a41;
+}

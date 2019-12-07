@@ -1,0 +1,161 @@
+@charset "utf-8";
+.white{
+    color: #333a41;
+    background-color: whitesmoke;
+    border:2px solid #333a41;
+    box-shadow: 0 0 10px #333333;
+}
+/*黑色风格*/
+.black{
+    color: white;
+    background-color:#333a41;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 10px #333333;
+}
+/*管理员姓名*/
+.man_ul{
+    height: 600px;
+    position: absolute;
+    top: 60px;
+    left: 1180px;
+    border-left: 1px solid #d1d5dd;
+
+}
+.i1{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 40px;
+}
+
+/*功能栏*/
+.booklist{
+    width: 174px;
+    height: 520px;
+    margin: 0 120px; /*该*/
+    padding-top: 100px;
+    padding-right: 40px;
+    background-size:cover;
+    /*border-right: 1px solid #d1d5dd;*/
+    border-right: 1px solid #111111;
+}
+
+/*li标签*/
+.l1{
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    margin: 0 10px;
+}
+/*li中的隐藏div标签*/
+.hidbox{
+    width: 845px;
+    height: 600px;
+    display: none;
+    top: -162px;
+    left: 202px;
+    text-align: center;
+    color: #333a41;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border-left: 1px solid #d1d5dd;
+}
+.hidbox p{
+    /*margin-top: 30px;*/
+    height: 60px;
+    font-size: 24px;
+    line-height: 60px;
+    color: #100c36;
+}
+.hidbox form {
+    width: 260px;
+    /*height: 192px;*/
+    border: 2px solid #d1d5da;
+    margin: 45px auto;
+    text-align: left;
+    padding: 10px 40px;
+    /*background-color: #333a41;*/
+    /*color: whitesmoke;*/
+}
+.hidbox form:hover {
+    cursor: pointer;
+    color: #333a41;
+    background-color: whitesmoke;
+    border: 2px solid indianred;
+    border-right-color:deepskyblue ;
+    border-bottom-color:deepskyblue ;
+    transition: 1s;
+}
+.hidbox form *{
+    width: 260px;
+    height: 40px;
+}
+.hidbox form label{
+    margin-bottom: 7px;
+    display: block;
+}
+.hidbox form input{
+    width: 260px;
+    height: 30px;
+    margin: 0;
+    display: block;
+    outline: none;
+
+    color: #333a41;
+    background-color:whitesmoke;
+    border: 1px solid #d1d5dd;
+    box-shadow: 0 0 10px #333333;
+}
+.hidbox form input:hover{
+    color: #333a41;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px #000;
+}
+.hidbox form button{
+    margin-top: 10px;
+    width: 266px;
+    height: 40px;
+    color: white;
+    background-color:#333a41;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 10px #333333;
+}
+.hidbox form button:hover{
+    cursor: pointer;
+    color: #333a41;
+    background-color: whitesmoke;
+    border: 2px solid indianred;
+    border-right-color:deepskyblue ;
+    border-bottom-color:deepskyblue ;
+    transition: 0.5s;
+}
+.booklist .li_top div{
+    display: block;
+}
+.booklist .l1:hover{
+    cursor: pointer;
+}
+.booklist .l1 .hidbox2{
+    top: -226px;
+}
+.booklist  .l1 .hidbox3{
+    top: -290px;
+}
+.booklist  .l1 .hidbox4{
+    top: -354px;
+}
+.booklist  .l1 .hidbox5{
+    top: -418px;
+}
+.booklist  .l1 .hidbox6{
+    top: -482px;
+    overflow: scroll;
+    text-overflow: ellipsis;
+}
+.end{
+    margin-top: 0;
+}

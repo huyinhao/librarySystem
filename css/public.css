@@ -1,0 +1,33 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,li,ol{
+	list-style: none;
+}
+
+.poa{
+	position: absolute;
+}
+
+.por{
+	position: relative;
+}
+
+.pof{
+	position: fixed;
+}
+
+.inb{
+	display: inline-block;
+}
+.disn{
+	display: none;
+}
