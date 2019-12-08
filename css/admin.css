@@ -14,12 +14,12 @@
 }
 /*管理员姓名*/
 .man_ul{
-    height: 600px;
     position: absolute;
     top: 60px;
     left: 1180px;
     border-left: 1px solid #d1d5dd;
-
+    margin-top: 400px;
+    height: 200px;
 }
 .i1{
     width: 180px;

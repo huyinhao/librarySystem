@@ -6,9 +6,17 @@
     <link rel="icon" href="../images/book.png">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/box.css">
     <link rel="stylesheet" href="../css/search.css">
 </head>
 <style>
+    .cube{
+        left: 180px;
+        top: 300px;
+    }
+    td{
+        width: 120px;
+    }
 </style>
 <script>
     window.onload = function () {
@@ -66,6 +74,51 @@ echo"
 ";
 ?>
 <div id = "cha_box">
+    <div class="cube">
+        <!--前面图片 -->
+        <div class="out_front">
+            <img src="../images/t_c2.jpg" class="pic">
+        </div>
+        <!--后面图片 -->
+        <div class="out_back">
+            <img src="../images/t_c6.jpg" class="pic">
+        </div>
+        <!--左面图片 -->
+        <div class="out_left">
+            <img src="../images/t_c3.jpg" class="pic">
+        </div>
+        <!--右面图片 -->
+        <div class="out_right">
+            <img src="../images/t_c1.jpg" class="pic">
+        </div>
+        <!--上面图片 -->
+        <div class="out_top">
+            <img src="../images/t_c4.jpg" class="pic">
+        </div>
+        <!--下面图片 -->
+        <div class="out_bottom">
+            <img src="../images/t_c5.jpg" class="pic">
+        </div>
+        <!--小正方体 -->
+        <span class="in_front">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_01.jpg" class="in_pic">
+        </span>
+        <span class="in_back">
+             <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_02.jpg" class="in_pic">
+        </span>
+        <span class="in_left">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_03.jpg" class="in_pic">
+        </span>
+        <span class="in_right">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_04.jpg" class="in_pic">
+        </span>
+        <span class="in_top">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_05.jpg" class="in_pic">
+        </span>
+        <span class="in_bottom">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_06.jpg" class="in_pic">
+        </span>
+    </div>
     <?php
 //读取并输出记录
 echo "<table class='table'>

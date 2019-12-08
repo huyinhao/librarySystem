@@ -6,10 +6,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/book.png"/>
     <link rel="stylesheet" type="text/css" href="../css/public.css">
     <link rel="stylesheet" type="text/css" href="../css/top.css">
+    <link rel="stylesheet" href="../css/box.css">
     <link rel="stylesheet" href="../css/admin.css">
     <style type="text/css">
-
-
+        .cube{
+            top: 180px;
+            right: -900px;
+        }
+        .man_ul{
+            margin-top: 400px;
+            height: 200px;
+        }
     </style>
     <script>
         window.onload = function () {
@@ -139,10 +146,52 @@
 <!--搜索栏E-->
 <!--顶栏E-->
 <div id="box">
-    <ul class="man_ul">
-        <div style="padding-top: 100px;">
-            <img src="../images/book.png" style="width: 150px;height: 150px; margin:20px 54px;">
+    <div class="cube">
+        <!--前面图片 -->
+        <div class="out_front">
+            <img src="../images/t_c2.jpg" class="pic">
         </div>
+        <!--后面图片 -->
+        <div class="out_back">
+            <img src="../images/t_c6.jpg" class="pic">
+        </div>
+        <!--左面图片 -->
+        <div class="out_left">
+            <img src="../images/t_c3.jpg" class="pic">
+        </div>
+        <!--右面图片 -->
+        <div class="out_right">
+            <img src="../images/t_c1.jpg" class="pic">
+        </div>
+        <!--上面图片 -->
+        <div class="out_top">
+            <img src="../images/t_c4.jpg" class="pic">
+        </div>
+        <!--下面图片 -->
+        <div class="out_bottom">
+            <img src="../images/t_c5.jpg" class="pic">
+        </div>
+        <!--小正方体 -->
+        <span class="in_front">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_01.jpg" class="in_pic">
+        </span>
+        <span class="in_back">
+             <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_02.jpg" class="in_pic">
+        </span>
+        <span class="in_left">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_03.jpg" class="in_pic">
+        </span>
+        <span class="in_right">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_04.jpg" class="in_pic">
+        </span>
+        <span class="in_top">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_05.jpg" class="in_pic">
+        </span>
+        <span class="in_bottom">
+            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_06.jpg" class="in_pic">
+        </span>
+    </div>
+    <ul class="man_ul">
         <?php
         session_start();
         $Mname = $_COOKIE['Mname'];
