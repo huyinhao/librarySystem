@@ -111,22 +111,22 @@
         </div>
         <!--小正方体 -->
         <span class="in_front">
-            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_01.jpg" class="in_pic">
+            <img src="../images/5.jpg" class="in_pic">
         </span>
         <span class="in_back">
-             <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_02.jpg" class="in_pic">
+             <img src="../images/6.jpg" class="in_pic">
         </span>
         <span class="in_left">
-            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_03.jpg" class="in_pic">
+            <img src="../images/7.jpg" class="in_pic">
         </span>
         <span class="in_right">
-            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_04.jpg" class="in_pic">
+            <img src="../images/8.jpg" class="in_pic">
         </span>
         <span class="in_top">
-            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_05.jpg" class="in_pic">
+            <img src="../images/9.jpg" class="in_pic">
         </span>
         <span class="in_bottom">
-            <img src="https://images.cnblogs.com/cnblogs_com/lzw123-/1273451/t_06.jpg" class="in_pic">
+            <img src="../images/10.jpg" class="in_pic">
         </span>
     </div>
     <!--借书情况S-->
