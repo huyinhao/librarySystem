@@ -11,8 +11,19 @@
 </head>
 <style>
     .cube{
-        left: 180px;
-        top: 300px;
+        position: fixed;
+        left: 60px;
+        top: 110px;
+    }
+    .right_box{
+        position: fixed;
+        right: -1160px;
+        top: 270px;
+        height: 1px;
+        padding-top: 200px;
+    }
+    .right_box span{
+        top: 240px;
     }
     td{
         width: 120px;
@@ -117,6 +128,51 @@ echo"
         </span>
         <span class="in_bottom">
             <img src="../images/10.jpg" class="in_pic">
+        </span>
+    </div>
+    <div class="right_box cube">
+        <!--前面图片 -->
+        <div class="out_front">
+            <img src="../images/5.jpg" class="pic">
+        </div>
+        <!--后面图片 -->
+        <div class="out_back">
+            <img src="../images/6.jpg" class="pic">
+        </div>
+        <!--左面图片 -->
+        <div class="out_left">
+            <img src="../images/7.jpg" class="pic">
+        </div>
+        <!--右面图片 -->
+        <div class="out_right">
+            <img src="../images/8.jpg" class="pic">
+        </div>
+        <!--上面图片 -->
+        <div class="out_top">
+            <img src="../images/9.jpg" class="pic">
+        </div>
+        <!--下面图片 -->
+        <div class="out_bottom">
+            <img src="../images/10.jpg" class="pic">
+        </div>
+        <!--小正方体 -->
+        <span class="in_front">
+            <img src="../images/t_c2.jpg" class="in_pic">
+        </span>
+        <span class="in_back">
+             <img src="../images/t_c6.jpg" class="in_pic">
+        </span>
+        <span class="in_left">
+            <img src="../images/t_c3.jpg" class="in_pic">
+        </span>
+        <span class="in_right">
+            <img src="../images/t_c1.jpg" class="in_pic">
+        </span>
+        <span class="in_top">
+            <img src="../images/t_c4.jpg" class="in_pic">
+        </span>
+        <span class="in_bottom">
+            <img src="../images/t_c5.jpg" class="in_pic">
         </span>
     </div>
     <?php

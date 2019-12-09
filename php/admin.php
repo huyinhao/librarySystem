@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../css/admin.css">
     <style type="text/css">
         .cube{
-            top: 180px;
+            top: 80px;
             right: -900px;
+            height: 320px;
         }
         .man_ul{
             margin-top: 400px;

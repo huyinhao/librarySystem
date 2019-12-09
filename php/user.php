@@ -29,8 +29,9 @@
         /*管理员姓名*/
         /*功能栏*/
         .cube{
-            left: 160px;
+            left: 100px;
             top: 450px;
+            height: 160px;
         }
 
     </style>
@@ -129,6 +130,7 @@
             <img src="../images/10.jpg" class="in_pic">
         </span>
     </div>
+
     <!--借书情况S-->
     <div class="userbox1" id="div1">
         <ul class="box1_ul1">
