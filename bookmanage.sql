@@ -11,7 +11,7 @@
  Target Server Version : 50727
  File Encoding         : 65001
 
- Date: 07/12/2019 22:35:19
+ Date: 12/12/2019 22:11:03
 */
 
 SET NAMES utf8mb4;
@@ -29,21 +29,21 @@ CREATE TABLE `book`  (
   `Btype` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Bqty` int(3) NOT NULL,
   PRIMARY KEY (`Bno`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 490 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 491 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of book
 -- ----------------------------
-INSERT INTO `book` VALUES (1, '白夜行', '[日]东野圭吾', '南海出版公司', '推理', 4);
+INSERT INTO `book` VALUES (1, '白夜行', '[日]东野圭吾', '南海出版公司', '推理', 3);
 INSERT INTO `book` VALUES (2, '嫌疑人X的献身', '[日]东野圭吾', '南海出版公司', '推理', 3);
 INSERT INTO `book` VALUES (3, '解忧杂货店', '[日]东野圭吾', '南海出版公司', '推理', 6);
-INSERT INTO `book` VALUES (4, '恶意', '[日]东野圭吾', '南海出版公司', '推理', 2);
-INSERT INTO `book` VALUES (5, '达·芬奇密码', '[美]丹·布朗', '上海人民出版社', '推理', 8);
-INSERT INTO `book` VALUES (7, '福尔摩斯探案全集（上中下）', '[英]阿·柯南道尔', '1981-8', '推理', -1);
+INSERT INTO `book` VALUES (4, '恶意', '[日]东野圭吾', '南海出版公司', '推理', 1);
+INSERT INTO `book` VALUES (5, '达·芬奇密码', '[美]丹·布朗', '上海人民出版社', '推理', 7);
+INSERT INTO `book` VALUES (7, '福尔摩斯探案全集(上中下)', '[英]阿·柯南道尔', '上海人民出版社', '推理', 1);
 INSERT INTO `book` VALUES (8, '网内人', '陈浩基', '九州出版社', '推理', 9);
 INSERT INTO `book` VALUES (9, '默读', 'Priest', '百花洲文艺出版社', '推理', 3);
 INSERT INTO `book` VALUES (10, '尸人庄谜案', '[日]今村昌弘', '北京联合出版公司', '推理', 0);
-INSERT INTO `book` VALUES (12, '放学后', '（日）东野圭吾', '南海出版公司', '推理', 10);
+INSERT INTO `book` VALUES (12, '放学后', '（日）东野圭吾', '南海出版公司', '推理', 9);
 INSERT INTO `book` VALUES (13, '13 67', '陳浩基', '皇冠', '推理', 0);
 INSERT INTO `book` VALUES (15, '长夜难明', '紫金陈', '云南人民出版社', '推理', 5);
 INSERT INTO `book` VALUES (16, '新参者', '[日]东野圭吾', '南海出版公司', '推理', 8);
@@ -138,16 +138,16 @@ INSERT INTO `book` VALUES (108, '机械复制时代的艺术', '瓦尔特·本�
 INSERT INTO `book` VALUES (109, '易经的奥秘', '曾仕强', '陕西师范大学出版社', '哲学', 9);
 INSERT INTO `book` VALUES (110, '病隙碎笔', '史铁生', '湖南文艺出版社', '哲学', 6);
 INSERT INTO `book` VALUES (111, '逻辑学', '[德]黑格尔', '人民出版社', '哲学', 5);
-INSERT INTO `book` VALUES (112, '运动-影像', '吉尔·德勒兹', '湖南美术出版社', '哲学', 6);
+INSERT INTO `book` VALUES (112, '运动-影像', '吉尔·德勒兹', '湖南美术出版社', '哲学', 5);
 INSERT INTO `book` VALUES (113, '探求真理的指导原则', '（法）笛卡尔', '商务印书馆', '哲学', 6);
 INSERT INTO `book` VALUES (114, '鼠疫', '（法）加缪', '上海译文出版社', '哲学', 1);
 INSERT INTO `book` VALUES (115, '自然哲学之数学原理', '(英)牛顿', '北京大学出版社', '哲学', 9);
 INSERT INTO `book` VALUES (116, '身边的逻辑学', '伯纳·派顿', '中信出版社', '哲学', 10);
 INSERT INTO `book` VALUES (117, '活着', '余华', '作家出版社', '生活', 4);
-INSERT INTO `book` VALUES (118, '撒哈拉的故事', '三毛', '皇冠出版社', '生活', 6);
+INSERT INTO `book` VALUES (118, '撒哈拉的故事', '三毛', '皇冠出版社', '生活', 5);
 INSERT INTO `book` VALUES (119, '许三观卖血记', '余华', '南海出版公司', '生活', 0);
 INSERT INTO `book` VALUES (120, '平凡的世界（全三部）', '路遥', '人民文学出版社', '生活', 5);
-INSERT INTO `book` VALUES (122, '断舍离', '山下英子', '广西科学技术出版社', '生活', 6);
+INSERT INTO `book` VALUES (122, '断舍离', '山下英子', '广西科学技术出版社', '生活', 4);
 INSERT INTO `book` VALUES (123, '回答不了', '匡扶', '浙江文艺出版社', '生活', 0);
 INSERT INTO `book` VALUES (124, '云边有个小卖部', '张嘉佳', '湖南文艺出版社', '生活', 8);
 INSERT INTO `book` VALUES (125, '原则', '[美]瑞·达利欧', '中信出版社', '生活', 7);
@@ -189,7 +189,7 @@ INSERT INTO `book` VALUES (161, '被劫持的私生活', '山西人民出版社'
 INSERT INTO `book` VALUES (162, '你的善良必须有点锋芒', '李甜甜', '青岛出版社', '生活', 7);
 INSERT INTO `book` VALUES (163, '喝自己酿的啤酒', '高岩', '中原出版传媒集团', '生活', 10);
 INSERT INTO `book` VALUES (164, '三国演义（全二册）', '[明]罗贯中', '人民文学出版社', '古典文学', 1);
-INSERT INTO `book` VALUES (165, '西游记（全二册）', '吴承恩', '人民文学出版社', '古典文学', 3);
+INSERT INTO `book` VALUES (165, '西游记（全二册）', '吴承恩', '人民文学出版社', '古典文学', 2);
 INSERT INTO `book` VALUES (166, '水浒传（全二册）', '[明]施耐庵、罗贯中', '人民文学出版社', '古典文学', 8);
 INSERT INTO `book` VALUES (167, '浮生六记', '[清]沈复', '人民文学出版社', '古典文学', 5);
 INSERT INTO `book` VALUES (169, '人间词话', '王国维', '上海古籍出版社', '古典文学', 4);
@@ -276,16 +276,16 @@ INSERT INTO `book` VALUES (261, '上锁的房间', '贵志佑介', '重庆出版
 INSERT INTO `book` VALUES (262, '始料未及爱上你', '惜双双', '江苏凤凰文艺出版社', '悬疑', 5);
 INSERT INTO `book` VALUES (263, '巷说百物语', '[日]京极夏彦', '北京十月文艺出版社', '悬疑', 2);
 INSERT INTO `book` VALUES (264, '全部成为F', '(日)森博嗣', '江苏文艺出版社', '悬疑', 6);
-INSERT INTO `book` VALUES (265, '反转', '[日]凑佳苗', '北京联合出版公司', '悬疑', 1);
+INSERT INTO `book` VALUES (265, '反转', '[日]凑佳苗', '北京联合出版公司', '悬疑', 0);
 INSERT INTO `book` VALUES (267, '三体Ⅱ', '刘慈欣', '重庆出版社', '科幻', 2);
 INSERT INTO `book` VALUES (269, '海底两万里', '[法国]儒尔·凡尔纳', '译林出版社', '科幻', 8);
 INSERT INTO `book` VALUES (270, '醉步男', '[日]小林泰三', '北京时代华文书局', '科幻', 8);
 INSERT INTO `book` VALUES (271, '球状闪电', '刘慈欣', '四川科学技术出版社', '科幻', 0);
 INSERT INTO `book` VALUES (272, '你一生的故事', '[美]特德·姜', '译林出版社', '科幻', 9);
 INSERT INTO `book` VALUES (273, '克莱因壶', '[日]冈岛二人', '化学工业出版社', '科幻', 9);
-INSERT INTO `book` VALUES (274, '2001：太空漫游', '[英]阿瑟·克拉克', '上海文艺出版社', '科幻', -1);
+INSERT INTO `book` VALUES (274, '2001：太空漫游', '[英]阿瑟·克拉克', '上海文艺出版社', '科幻', 2);
 INSERT INTO `book` VALUES (275, '群星', '七月', '人民文学出版社', '科幻', 7);
-INSERT INTO `book` VALUES (276, '献给阿尔吉侬的花束', '[美]丹尼尔·凯斯', '广西师范大学出版社', '科幻', -1);
+INSERT INTO `book` VALUES (276, '献给阿尔吉侬的花束', '[美]丹尼尔·凯斯', '广西师范大学出版社', '科幻', 2);
 INSERT INTO `book` VALUES (277, '自指引擎', '[日]圆城塔', '人民文学出版社', '科幻', 1);
 INSERT INTO `book` VALUES (278, '与罗摩相会', '[英]阿瑟·克拉克', '江苏凤凰文艺出版社', '科幻', 3);
 INSERT INTO `book` VALUES (279, '北京折叠', '郝景芳', '2016-7', '科幻', 3);
@@ -315,7 +315,7 @@ INSERT INTO `book` VALUES (306, '日本人为何选择了战争', '[日]加藤�
 INSERT INTO `book` VALUES (308, '明朝那些事儿（1-9）', '当年明月', '中国海关出版社', '历史', 8);
 INSERT INTO `book` VALUES (309, '死屋', '[英]丹尼尔·比尔', '后浪丨四川文艺出版社', '历史', 8);
 INSERT INTO `book` VALUES (310, '枪炮、病菌与钢铁', '[美]贾雷德·戴蒙德', '上海世纪出版集团', '历史', 6);
-INSERT INTO `book` VALUES (311, '巨人的陨落', '[英]肯·福莱特', '江苏凤凰文艺出版社', '历史', 3);
+INSERT INTO `book` VALUES (311, '巨人的陨落', '[英]肯·福莱特', '江苏凤凰文艺出版社', '历史', 2);
 INSERT INTO `book` VALUES (312, '白鹿原', '陈忠实', '人民文学出版社', '历史', 5);
 INSERT INTO `book` VALUES (314, '显微镜下的大明', '马伯庸', '湖南文艺出版社', '历史', 3);
 INSERT INTO `book` VALUES (315, '夹边沟记事', '杨显惠', '花城出版社', '历史', 9);
@@ -409,11 +409,11 @@ INSERT INTO `book` VALUES (407, '构建高性能Web站点', '郭欣', '电子工
 INSERT INTO `book` VALUES (408, 'Python趣味编程入门', '(英)迈克·桑德斯', '人民邮电', '编程', 10);
 INSERT INTO `book` VALUES (409, 'Docker——容器与容器云（第2版）', '浙江大学SEL实验室', '人民邮电出版社', '编程', 0);
 INSERT INTO `book` VALUES (410, '大数据平台基础架构指南', '刘旭晖', '电子工业出版社', '编程', 2);
-INSERT INTO `book` VALUES (411, 'Producter 让产品从0到1', '周楷雯', '人民邮电出版社', '编程', 1);
+INSERT INTO `book` VALUES (411, 'Producter 让产品从0到1', '周楷雯', '人民邮电出版社', '编程', 0);
 INSERT INTO `book` VALUES (412, '深度学习框架PyTorch：入门与实践', '陈云', '电子工业出版社', '编程', 1);
 INSERT INTO `book` VALUES (413, 'MySQL技术内幕', '姜承尧', '机械工业出版社', '编程', 1);
 INSERT INTO `book` VALUES (414, 'Linux 内核设计的艺术（第2版）', '新设计团队', '机械工业出版社', '编程', 8);
-INSERT INTO `book` VALUES (415, '精益创业', '[美]埃里克·莱斯', '中信出版社', '编程', 9);
+INSERT INTO `book` VALUES (415, '精益创业', '[美]埃里克·莱斯', '中信出版社', '编程', 8);
 INSERT INTO `book` VALUES (416, '时间简史', '[英]史蒂芬·霍金', '湖南科学技术出版社', '科学', 3);
 INSERT INTO `book` VALUES (417, '从一到无穷大', '[美]G.伽莫夫', '科学出版社', '科学', 8);
 INSERT INTO `book` VALUES (418, '上帝掷骰子吗', '曹天元', '辽宁教育出版社', '科学', 9);
@@ -468,12 +468,13 @@ INSERT INTO `book` VALUES (467, '美国货币体系', '威廉·华莱士', '格�
 INSERT INTO `book` VALUES (468, '兜售繁荣', '保罗·克鲁格曼', '中信出版社', '金融', 7);
 INSERT INTO `book` VALUES (469, '银行局', '边江', '重庆出版社', '金融', 8);
 INSERT INTO `book` VALUES (470, '固定收益证券手册', '弗兰克·J·法博齐', '中国人民大学出版社', '金融', 9);
-INSERT INTO `book` VALUES (471, '对冲基金经理笔记', '拉尔斯·克罗耶', '中国财经', '金融', 3);
+INSERT INTO `book` VALUES (471, '对冲基金经理笔记', '拉尔斯·克罗耶', '中国财经', '金融', 2);
 INSERT INTO `book` VALUES (472, '高盛帝国（下）', '[美]查尔斯·埃利斯', '中信出版社', '金融', 7);
 INSERT INTO `book` VALUES (473, '这个时代的无知与傲慢', '（美）乔治·索罗斯', '中信出版社', '金融', 9);
 INSERT INTO `book` VALUES (474, '新一代银行IT架构', '马智涛、卢道和、李靖', '机械工业出版社', '金融', 3);
 INSERT INTO `book` VALUES (475, '罗斯柴尔德家族（上）', '尼尔·弗格森', '中信出版社', '金融', 7);
 INSERT INTO `book` VALUES (476, '经济解释', '张五常', '商务印书馆', '金融', 1);
+INSERT INTO `book` VALUES (490, '五六七', '域', '清华大学出版社', '悬疑', 1);
 
 -- ----------------------------
 -- Table structure for lcard
@@ -487,15 +488,17 @@ CREATE TABLE `lcard`  (
   `Lbkno` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Ltel` varchar(11) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`Lno`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 100009 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 100011 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of lcard
 -- ----------------------------
-INSERT INTO `lcard` VALUES (1000, 17081610, '许大哥', '123456', '4', '17376571334');
-INSERT INTO `lcard` VALUES (1006, 17081611, '陈大哥一号', '12345678', '2', '17376571331');
-INSERT INTO `lcard` VALUES (1007, 17081612, '陈大哥二号', '11111111', '0', '17376571332');
-INSERT INTO `lcard` VALUES (1008, 17081613, '俞大哥', '123456', '0', '17376571330');
+INSERT INTO `lcard` VALUES (100000, 17081610, '许大哥', '123456', '6', '17376571334');
+INSERT INTO `lcard` VALUES (100006, 17081611, '陈大哥一号', '12345678', '5', '17376571331');
+INSERT INTO `lcard` VALUES (100007, 17081612, '陈大哥二号', '111111', '4', '17376571332');
+INSERT INTO `lcard` VALUES (100008, 17081613, '俞大哥', '123456', '2', '17376571330');
+INSERT INTO `lcard` VALUES (100009, 777, '777', '777', '0', '777');
+INSERT INTO `lcard` VALUES (100010, 17081714, '胡小弟', '555', '0', '12312341234');
 
 -- ----------------------------
 -- Table structure for lendlb
@@ -510,16 +513,29 @@ CREATE TABLE `lendlb`  (
   `Lpress` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `Ldate` date NULL DEFAULT NULL,
   `Lrtdate` date NULL DEFAULT NULL,
-  PRIMARY KEY (`Lbno`) USING BTREE
+  PRIMARY KEY (`Lbno`, `Lno`) USING BTREE
 ) ENGINE = MyISAM CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of lendlb
 -- ----------------------------
-INSERT INTO `lendlb` VALUES (1, '白夜行', 1000, '许大哥', '[日]东野圭吾', '南海出版公司', '2019-12-07', '2019-12-14');
-INSERT INTO `lendlb` VALUES (2, '嫌疑人X的献身', 1000, '许大哥', '[日]东野圭吾', '南海出版公司', '2019-12-07', '2019-12-13');
-INSERT INTO `lendlb` VALUES (3, '解忧杂货店', 1000, '许大哥', '[日]东野圭吾', '南海出版公司', '2019-12-04', '2019-12-29');
-INSERT INTO `lendlb` VALUES (80, '不能承受的生命之轻', 1000, '许大哥', '[捷克]米兰·昆德拉', '上海译文出版社', '2019-12-02', '2019-12-13');
+INSERT INTO `lendlb` VALUES (1, '白夜行', 100000, '许大哥', '[日]东野圭吾', '南海出版公司', '2019-12-12', '2019-12-14');
+INSERT INTO `lendlb` VALUES (2, '嫌疑人X的献身', 100000, '许大哥', '[日]东野圭吾', '南海出版公司', '2019-12-07', '2019-12-13');
+INSERT INTO `lendlb` VALUES (3, '解忧杂货店', 100000, '许大哥', '[日]东野圭吾', '南海出版公司', '2019-12-04', '2019-12-29');
+INSERT INTO `lendlb` VALUES (80, '不能承受的生命之轻', 100000, '许大哥', '[捷克]米兰·昆德拉', '上海译文出版社', '2019-12-02', '2019-12-13');
+INSERT INTO `lendlb` VALUES (122, '断舍离', 100000, '许大哥', '山下英子', '广西科学技术出版社', '2019-12-12', '2019-12-14');
+INSERT INTO `lendlb` VALUES (122, '断舍离', 100006, '陈大哥一号', '山下英子', '广西科学技术出版社', '2019-12-12', '2019-12-14');
+INSERT INTO `lendlb` VALUES (5, '达·芬奇密码', 100000, '许大哥', '[美]丹·布朗', '上海人民出版社', '2019-12-12', '2019-12-15');
+INSERT INTO `lendlb` VALUES (7, '福尔摩斯探案全集（上中下）', 100006, '陈大哥一号', '[英]阿·柯南道尔', '上海人民出版社', '2019-12-12', '2020-01-15');
+INSERT INTO `lendlb` VALUES (12, '放学后', 100006, '陈大哥一号', '（日）东野圭吾', '南海出版公司', '2019-12-13', '2019-12-22');
+INSERT INTO `lendlb` VALUES (112, '运动-影像', 100006, '陈大哥一号', '吉尔·德勒兹', '湖南美术出版社', '2019-12-13', '2019-12-22');
+INSERT INTO `lendlb` VALUES (118, '撒哈拉的故事', 100006, '陈大哥一号', '三毛', '皇冠出版社', '2019-12-13', '2019-12-22');
+INSERT INTO `lendlb` VALUES (415, '精益创业', 100007, '陈大哥二号', '[美]埃里克·莱斯', '中信出版社', '2019-12-13', '2019-12-22');
+INSERT INTO `lendlb` VALUES (471, '对冲基金经理笔记', 100007, '陈大哥二号', '拉尔斯·克罗耶', '中国财经', '2019-12-13', '2019-12-22');
+INSERT INTO `lendlb` VALUES (411, 'Producter 让产品从0到1', 100007, '陈大哥二号', '周楷雯', '人民邮电出版社', '2019-12-13', '2019-12-22');
+INSERT INTO `lendlb` VALUES (311, '巨人的陨落', 100007, '陈大哥二号', '[英]肯·福莱特', '江苏凤凰文艺出版社', '2019-12-13', '2019-12-22');
+INSERT INTO `lendlb` VALUES (165, '西游记（全二册）', 100008, '俞大哥', '吴承恩', '人民文学出版社', '2019-12-12', '2019-12-15');
+INSERT INTO `lendlb` VALUES (265, '反转', 100008, '俞大哥', '[日]凑佳苗', '北京联合出版公司', '2019-12-12', '2020-01-18');
 
 -- ----------------------------
 -- Table structure for manager
