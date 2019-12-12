@@ -28,6 +28,11 @@
 
         /*管理员姓名*/
         /*功能栏*/
+        .cube{
+            left: 100px;
+            top: 450px;
+            height: 160px;
+        }
 
     </style>
 </head>
@@ -65,20 +70,22 @@
                     $sql = "select * from lcard where Lno = '{$_SESSION['Lno']}'";
                     $result = $conn->sql($sql);
                     $row = mysqli_fetch_assoc($result);
-//                    $book = 10 - $row['Lbkno'];
+                    $book = 10 - $row['Lbkno'];
                     echo "
-<div class=\"name_div  \">
+<div class=\"name_div\">
+    用户编号:{$row['LSno']}
+   </div>
+<div class=\"name_div num_div \">
     用户姓名:{$row['Lname']}
 </div>
 <div class=\"name_div num_div\">
     借书证编号:{$row['Lno']}
 </div>
 <div class=\"name_div num_div\">
-    目前借阅: {$row['Lbkno']}本
+    剩余可借: {$book}
 </div>
-<div class=\"name_div num_div tel\">
-    联系方式:
-    {$row['Ltel']}
+<div class=\"name_div num_div\">
+    联系方式:{$row['Ltel']}
 </div>";
                     session_write_close(); ?>
 

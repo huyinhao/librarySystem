@@ -1,8 +1,12 @@
 /*魔方*/
-.cube{
-    left: 100px;
-    top: 450px;
-    height: 160px;
+
+.cont{
+    width: 350px;
+    height: 600px;
+    background-size:cover;
+    border: 1px solid #d1d5da;
+    border-bottom: none;
+    display: inline-block;
 }
 /*左边栏*/
 .booklist{
@@ -97,6 +101,7 @@
 .box1_ul2 .ins_li{
     font-size: 14px;
     margin-top: 10px;
+    overflow: hidden;
 }
 /*提示信息*/
 .box1_ul2 .no_more{
