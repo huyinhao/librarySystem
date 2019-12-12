@@ -1,7 +1,7 @@
 <?php
 require_once "mysql.php";
 session_start();
-
+$LSno = $_POST['LSno'];
 $Lname = $_POST['Lname'];
 $Lpassword = $_POST['Lpassword'];
 $Ltel = $_POST['Ltel'];
@@ -10,7 +10,7 @@ $sql = "select max(Lno) from lcard ";
 $return = $conn->sql($sql);
 $row = mysqli_fetch_assoc($return);
 $num = $row['max(Lno)'] + 1;
-$sql = "insert into lcard values (Lno,'$Lname','$Lpassword','0','$Ltel')";
+$sql = "insert into lcard values (Lno,'$LSno','$Lname','$Lpassword','0','$Ltel')";
 $result = $conn->sql($sql);
 
 if($result){

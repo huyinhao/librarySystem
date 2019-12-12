@@ -261,6 +261,8 @@
                 <div class="hidbox hidbox4 por" id="div4">
                     <p>借书证</p>
                     <form method="post" action="jieshuzheng.php">
+                        <label for="lcard" class="" >学号:</label>
+                        <input type="text" id="" name="LSno" placeholder="Your select">
                         <label for="lcard" class="" >姓名:</label>
                         <input type="text" id="" name="Lname" placeholder="Your select">
                         <label for="lcard" class="" >密码:</label>

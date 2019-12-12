@@ -16,7 +16,7 @@ if ($result){
     $enddate=strtotime($row['Lrtdate']);
     $startdate=strtotime($showtime);
     $days=round(($enddate-$startdate)/3600/24) ;
-    if(abs($days) <= 5){
+    if(abs($days) <= 15){
         $date_2 = date('Y-m-d', strtotime ("+1 month", strtotime($row['Lrtdate'])));
         $sql = "update lendlb set Lrtdate = '$date_2' where Lbno = '$Bno'";
         $result = $conn->sql($sql);

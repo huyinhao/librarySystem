@@ -18,8 +18,8 @@ $_SESSION['Lbook']= $book - $row['Lbkno'];#剩余可借的书
 $sql = "SELECT * FROM manager where Mno = '$username'";
 $result = $conn->sql($sql);
 $row = mysqli_fetch_assoc($result);
-setcookie("Mname",$row['Mname'],time()+300);
-setcookie("Mno",$row['Mno'],time()+300);
+setcookie("Mname",$row['Mname'],time()+3000);
+setcookie("Mno",$row['Mno'],time()+3000);
 //$_SESSION['Mname'] = $row['Mname'];
 //$_SESSION['Mno'] = $row['Mno'];
 $conn->close();
