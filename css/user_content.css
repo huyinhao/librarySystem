@@ -1,34 +1,10 @@
-/*管理员姓名*/
-/*功能栏*/
-/*.cube{*/
-/*    left: 240px;*/
-/*    top: 180px;*/
-/*}*/
-/*.booklist{*/
-/*    height: 200px;*/
-/*    margin-top: 400px;*/
-/*    margin-bottom: 0px;*/
-/*    padding-bottom: 0px;*/
-/*}*/
-/*.end{*/
-/*    margin-top: 0px;*/
-/*    padding-top: 0px;*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*}*/
-/*#box{*/
-/*    height: 600px;*/
-/*}*/
-/*主体内容*/
-.cont{
-    width: 350px;
-    height: 600px;
-    background-size:cover;
-    border: 1px solid #d1d5da;
-    border-bottom: none;
-    display: inline-block;
+/*魔方*/
+.cube{
+    left: 100px;
+    top: 450px;
+    height: 160px;
 }
-/*ul标签*/
+/*左边栏*/
 .booklist{
     width: 120px;
     height: 455px;
@@ -36,20 +12,19 @@
 /*logo*/
 .img_div{
     margin-left: 0px;
-    margin-top: 160px;
+    margin-top: 120px;
 }
-/*li标签*/
 .booklist .l1{
     width: 200px;
     color: black;
     font-size: 18px;
     line-height: 50px;
     top:-210px;
-    left: 180px;
+    left: 160px;
 }
 /*个人信息*/
 .name_div{
-    width: 150px;
+    width: 180px;
     height: 40px;
     background-color: white;
     font-size: 16px;
@@ -60,7 +35,6 @@
     border-bottom: 2px solid #d1d5da;
     box-shadow: 0 0 10px #333a41;
 }
-/*编号*/
 .num_div{
     margin: 10px 0;
 }
