@@ -70,12 +70,14 @@ $return = $conn->sql($sql_1);
 $row_2 = mysqli_fetch_assoc($return);
 if ($result and $return)
 {
-    if ($row['Bqty'] == 0)
+    if ($row['Bqty'] <= 0)
     {
         echo "<script>alert(\"库存不足\");window.location.href = \"admin.php\";</script>";
+        return;
     }
     if($row_2['Lbkno'] >= 10 ){
         echo "<script>alert(\"借书数到达上限\");window.location.href = \"admin.php\";</script>";
+        return;
     }
     $sql = "update book set Bqty = Bqty - '1' WHERE Bno = '$Bno'";
     $result = $conn->sql($sql);
