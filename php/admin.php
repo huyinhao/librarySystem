@@ -213,7 +213,7 @@
                     <form method="post" action="jieyue.php" >
                         <label for="jieyue" class="" >书号:</label>
                         <input type="text" id="" name="Bno" placeholder="Your select">
-                        <label for="jieyue" class="" >借书号:</label>
+                        <label for="jieyue" class="" >借书证编号:</label>
                         <input type="text" id="" name="Lno" placeholder="Your select">
                         <label for="jieyu" class="" >借书日期</label>
                         <input type="date" name="date">
@@ -232,7 +232,7 @@
                         <label for="jieyue" class="" >书号:</label>
                         <input type="text" id="" name="Lbno" placeholder="Your select">
                         <br>
-                        <label for="jieyue" class="" >借书号:</label>
+                        <label for="jieyue" class="" >借书证编号:</label>
                         <input type="text" id="" name="Lno" placeholder="Your select">
                         <br>
                         <button class="" style="vertical-align:middle"><span>还书</span></button>
@@ -248,7 +248,7 @@
                         <label for="lcard" class="" >书号:</label>
                         <input type="text" id="" name="Bno" placeholder="Your select">
                         <br>
-                        <label for="lcard" class="" >借书证号:</label>
+                        <label for="lcard" class="" >借书证编号:</label>
                         <input type="text" id="" name="Lno" placeholder="Your select">
                         <br>
                         <button class="button" style="vertical-align:middle"><span>续借</span></button>
@@ -261,8 +261,6 @@
                 <div class="hidbox hidbox4 por" id="div4">
                     <p>借书证</p>
                     <form method="post" action="jieshuzheng.php">
-                        <label for="lcard" class="" >学号:</label>
-                        <input type="text" id="" name="LSno" placeholder="Your select">
                         <label for="lcard" class="" >姓名:</label>
                         <input type="text" id="" name="Lname" placeholder="Your select">
                         <label for="lcard" class="" >密码:</label>
@@ -295,7 +293,7 @@
                 <div class="hidbox hidbox6 por" id="div6">
                     <p>信息查询</p>
                     <form method="post" action="chaxun.php">
-                        <label for="querybook" class="" >书籍查询</label>
+                        <label for="querybook" class="" >书库</label>
                         <input type="text" id="" name="query" placeholder="Your select">
                         <select id="type" name="type">
                             <option value="allbook">全部书籍</option>
@@ -310,23 +308,23 @@
                         <br>
                     </form>
                     <form method="post" action="chaxun2.php">
-                        <label for="" class="" >借书库查询</label>
+                        <label for="" class="" >借阅记录</label>
                         <input type="text" id="" name="query" placeholder="Your select">
                         <select id="" name="type">
-                            <option value="lendlb">借书库信息</option>
+                            <option value="lendlb">已借阅书籍信息</option>
                             <option value="Bno">书号</option>
-                            <option value="Lno">借书证号</option>
+                            <option value="Lno">借书证</option>
                         </select>
                         <br>
                         <button class="button" style="vertical-align:middle"><span>查询</span></button>
                         <br>
                     </form>
                     <form method="post" action="chaxun3.php">
-                        <label for="" class="" >借书卡查询</label>
+                        <label for="" class="" >借书证查询</label>
                         <input type="text" id="" name="query" placeholder="Your select">
                         <select id="" name="type">
-                            <option value="lcard">所有借书卡信息</option>
-                            <option value="Lno">借书证号</option>
+                            <option value="lcard">所有借书证信息</option>
+                            <option value="Lno">借书证编号</option>
                             <option value="LSno">学号</option>
                             <option value="Ltel">手机号</option>
                         </select>
