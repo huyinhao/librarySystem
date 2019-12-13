@@ -200,7 +200,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 //关闭数据库
 $conn->close();
-echo"<p  class=\"end\">书籍信息查询</p>";
+echo"<p  class=\"end\">书库信息</p>";
 ?>
 </div>
 </body>

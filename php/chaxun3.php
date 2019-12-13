@@ -218,7 +218,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     }
     $count++;
 }
-    echo"<p  class=\"end\">借书库信息查询</p>";
+    echo"<p  class=\"end\">借书证信息</p>";
 //关闭数据库
 $conn->close();
 ?>
